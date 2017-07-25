@@ -42,24 +42,85 @@ if (majorKey >= 53) {
 } else {
     majorKey -= 13;
 }
+// console.log('majorKey at line 45 ', majorKey);
 
 majorKey = majorKey + "11";
+
+// console.log('majorKey at line 49 ', majorKey);
+
 
 var keyChars = [];
 for (var index = 0; index < majorKey.length; index++) {
  keyChars[index] = majorKey.charAt(index);
 }
+
+// console.log('majorKey at line 57 ', majorKey);
+// console.log('keyChars at line 58', keyChars);
+
+
 keyChars.shift();
 keyChars.pop();
+
+// console.log('keyChars at line 64', keyChars);
+
 
 var reverse = [];
 
 for (var index = 0; index < keyChars.length; index++) {
      reverse.unshift(keyChars[index]);
-     
  }
+
+//  console.log('reverse at line 73', reverse);
+ 
 majorKey = parseInt(majorKey);
+
+// console.log('majorKey at line 77 ', majorKey);
+
 for (var index = 0; index < reverse.length; index++) {
     reverse[index] = parseInt(reverse[index]);
-    
 }
+// console.log('reverse at line 82 ', reverse);
+
+reverse = parseInt(reverse.join(""));
+
+// console.log('reverse at line 86 ', reverse);
+
+majorKey = majorKey+reverse;
+
+// console.log('majorKey at line 90 ', majorKey);
+
+
+if (majorKey == 60){
+    majorKey = 14;
+} else if (majorKey == 2930) {
+    majorKey = 27;
+} else {
+    majorKey = 2
+}
+
+// console.log('majorKey at line 101 ', majorKey);
+
+index = 10;
+while (index > 0) {
+    majorKey++
+    index--
+}
+
+// console.log('majorKey at line 109 ', majorKey);
+
+function stringShortener(val) {
+val = val.toString()
+    while (val.length>1) {
+        val = val.replace(val[0], "");
+    }
+return val
+}
+
+console.log(stringShortener(majorKey))
+ 
+
+
+// console.log('majorkey at end', majorKey);
+// console.log('keychars at end', keyChars);
+// console.log('reverse at end', reverse);
+// console.log(stringShortener(majorKey));

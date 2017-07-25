@@ -9,12 +9,20 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="script.js"></script>
+         <script src="script.js"></script> 
+         <link rel="stylesheet" type="text/css" href="style.css">
+         <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Merriweather">
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         
+        <div id="thatLine">The results for the talk-it-out assignment is <span id="results">stringShortener output</span></div>
+
+        <script>
+            document.getElementById("results").innerHTML = stringShortener(majorKey);
+        </script>   
     </body>
 </html>

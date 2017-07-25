@@ -117,8 +117,7 @@ return val
 }
 
 console.log(stringShortener(majorKey))
- 
-
+//  document.write("document write ", stringShortener(majorKey));
 
 // console.log('majorkey at end', majorKey);
 // console.log('keychars at end', keyChars);

@@ -2,5 +2,5 @@
 
 *See Prime assignment app for instructions. Then, update me!*
 
-* Ryan
-* Eric
+* Ryan Kiang
+* Eric Austin

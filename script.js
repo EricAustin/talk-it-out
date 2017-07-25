@@ -45,7 +45,7 @@ if (majorKey >= 53) {
 
 majorKey = majorKey + "11";
 
-var keyChars = []
+var keyChars = [];
 for (var index = 0; index < majorKey.length; index++) {
  keyChars[index] = majorKey.charAt(index);
 }
@@ -53,7 +53,13 @@ keyChars.shift();
 keyChars.pop();
 
 var reverse = [];
-for (var index = keyChars.length; index > 0; index--) {
-    var keyChars = array[index];
+
+for (var index = 0; index < keyChars.length; index++) {
+     reverse.unshift(keyChars[index]);
+     
+ }
+majorKey = parseInt(majorKey);
+for (var index = 0; index < reverse.length; index++) {
+    reverse[index] = parseInt(reverse[index]);
     
 }
